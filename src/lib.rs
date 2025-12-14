@@ -8,6 +8,7 @@ pub mod adc;
 pub mod buck;
 pub mod charger;
 pub mod gpios;
+pub mod ldsw;
 pub mod leds;
 pub mod mainreg;
 pub mod pof;
