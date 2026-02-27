@@ -27,10 +27,10 @@ This crate provides both low-level register access and a high-level API for mana
 | GPIO — General-purpose I/O                |        ✅         |         ✅         |
 | ADC - System Monitor                      |        ✅         |         ⚠️         |
 | POF - Power-fail comparator               |        ✅         |         ✅         |
-| TIMER — Timer/monitor                     |        ❌         |         ❌         |
+| TIMER — Timer/monitor                     |        ✅         |         ✅         |
 | Ship and hibernate modes                  |        ✅         |         ✅         |
 | Event and interrupt                       |        ❌         |         ❌         |
-| Reset and error                           |        ❌         |         ❌         |
+| Reset and error                           |        ✅         |         ✅         |
 | Fuel gauge                                |        ❌         |         ❌         |
 
 Legend:

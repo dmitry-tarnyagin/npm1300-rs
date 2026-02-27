@@ -12,8 +12,10 @@ pub mod ldsw;
 pub mod leds;
 pub mod mainreg;
 pub mod pof;
+pub mod reset;
 pub mod ship;
 pub mod sysreg;
+pub mod timer;
 
 const ADDR: u8 = 0x6B;
 
