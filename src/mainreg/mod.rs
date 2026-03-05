@@ -438,4 +438,12 @@ impl<I2c: embedded_hal_async::i2c::I2c, Delay: embedded_hal_async::delay::DelayN
             .write_async(|reg| reg.set_value(mask))
             .await
     }
+
+    pub async fn trigger_sys_reset(&mut self) -> Result<(), crate::NPM1300Error<I2c::Error>> {
+        self.device
+            .main()
+            .tasksysreset()
+            .dispatch_async(|reg| reg.set_tasksysreset(crate::common::Task::Trigger))
+            .await
+    }
 }
